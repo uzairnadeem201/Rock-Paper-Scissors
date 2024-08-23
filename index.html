@@ -13,25 +13,22 @@
         userChoice = 'rock';
         console.log(userChoice);
         computeResult();">
-        Rock
+        <img id="buttonPic" src="images/rock.png" alt="Rock">
         </button>
 
         <button onclick="
         userChoice = 'paper';
         console.log(userChoice);
         computeResult();">
-        Paper
+        <img id="buttonPic" src="images/paper.png" alt="Paper">
         </button>
         <button onclick="
         userChoice = 'scissors';
         console.log(userChoice);
         computeResult();">
-        Scissors
+        <img id="buttonPic" src="images/scissors.png" alt="Scissors">
         </button>
-        <button onclick="localStorage.clear();
-        location.reload();">
-            Reset
-        </button>
+        
 
     </div>
     <div id = "resBox">
@@ -44,6 +41,10 @@
     <h3 id ='computerChoice'></h3>
     <h3 id ='Result'></h3>
     <h3 id="score"></h3>
+    <button id = "Reset" onclick="localStorage.clear();
+        location.reload();">
+            Reset
+        </button>
     <script src ='index.js'>
 
     </script>
