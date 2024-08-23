@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket game</title>
+</head>
+<body>
+    <h1 id="mainHead">ROCK PAPER SCISSORS</h1>
+    <div id ="buttonMenu">
+        <button onclick="
+        userChoice = 'rock';
+        console.log(userChoice);
+        computeResult();">
+        Rock
+        </button>
+
+        <button onclick="
+        userChoice = 'paper';
+        console.log(userChoice);
+        computeResult();">
+        Paper
+        </button>
+        <button onclick="
+        userChoice = 'scissors';
+        console.log(userChoice);
+        computeResult();">
+        Scissors
+        </button>
+        <button onclick="localStorage.clear();
+        location.reload();">
+            Reset
+        </button>
+
+    </div>
+    <div id = "resBox">
+        <textarea id ="area" readonly>
+
+        </textarea>
+    </div>
+    
+    <h3 id ='userChoice'></h3>
+    <h3 id ='computerChoice'></h3>
+    <h3 id ='Result'></h3>
+    <h3 id="score"></h3>
+    <script src ='index.js'>
+
+    </script>
+    
+</body>
+</html>
